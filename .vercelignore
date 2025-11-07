@@ -1,0 +1,8 @@
+server.py
+replit.md
+.replit
+replit.nix
+__pycache__/
+*.pyc
+.git/
+.gitignore

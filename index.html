@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abua-Odual Local Government Area | Rivers State, Nigeria</title>
+  <meta name="description" content="Official Website of Abua-Odual Local Government Area - The Industrial Hub of Rivers State, Nigeria">
+  
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet Map CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <!-- Top Info Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-left">
+        <span><i class="fas fa-map-marker-alt"></i> Rivers State, Nigeria</span>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:info@abuaodual.gov.ng"><i class="fas fa-envelope"></i> info@abuaodual.gov.ng</a>
+        <span><i class="fas fa-clock"></i> Mon - Fri | 8am - 6pm</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header Section -->
+  <header id="main-header">
+    <div class="container header-flex">
+      <div class="header-left">
+        <img src="logo.jpeg" alt="Abua-Odual Logo" class="logo-img">
+        <div class="header-text">
+          <h3>OFFICIAL WEBSITE OF</h3>
+          <h1>Abua-Odual Local Government</h1>
+          <p>Rivers State, Nigeria</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="header-cta">
+          <a href="#contact" class="btn-primary">
+            <i class="fas fa-envelope"></i> Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <div class="container nav-container">
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="#about" class="dropbtn">About <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="#history">Our History</a></li>
+            <li><a href="#chairman">The Chairman</a></li>
+            <li><a href="#government">Local Government</a></li>
+          </ul>
+        </li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#news">News & Updates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Slider -->
+  <section id="home" class="hero-slider">
+    <div class="slide active" style="background-image: url('images3.jpg');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-text">
+            <h1 class="hero-title">We Are the Industrial Hub of Rivers State</h1>
+            <p class="hero-subtitle">Building a prosperous, sustainable, and united Abua-Odual</p>
+            <div class="hero-buttons">
+              <a href="#about" class="btn-hero">Learn More</a>
+              <a href="#contact" class="btn-hero-outline">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('Images2.jpg');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-text">
+            <h1 class="hero-title">Together for Growth and Development</h1>
+            <p class="hero-subtitle">Empowering our communities through good governance</p>
+            <div class="hero-buttons">
+              <a href="#departments" class="btn-hero">Our Departments</a>
+              <a href="#projects" class="btn-hero-outline">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('Images1.jpg');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-text">
+            <h1 class="hero-title">Service, Transparency, and Progress</h1>
+            <p class="hero-subtitle">Our mission is to serve every citizen with integrity and vision</p>
+            <div class="hero-buttons">
+              <a href="#agenda" class="btn-hero">Our Agenda</a>
+              <a href="#news" class="btn-hero-outline">Latest News</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-indicators">
+      <span class="indicator active" data-slide="0"></span>
+      <span class="indicator" data-slide="1"></span>
+      <span class="indicator" data-slide="2"></span>
+    </div>
+  </section>
+
+  <!-- Quick Services -->
+  <section class="services fade-in">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card green">
+          <div class="service-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3>Speak to Us</h3>
+          <p>Let's build together. Your voice matters in shaping our community.</p>
+          <a href="#contact" class="btn-service">Get in Touch <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card gold">
+          <div class="service-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Employment Opportunities</h3>
+          <p>Explore available career opportunities within the LGA.</p>
+          <a href="#jobs" class="btn-service">Apply Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card red">
+          <div class="service-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>Business Directory</h3>
+          <p>Register and grow your business in Abua-Odual LGA.</p>
+          <a href="#directory" class="btn-service">Access Portal <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Abua-Odual -->
+  <section id="about" class="about-section fade-in">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">About Us</span>
+        <h2>Welcome to Abua-Odual</h2>
+        <p class="section-subtitle">The largest and most dynamic local government in Rivers State</p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3>Industrial Hub</h3>
+          <p>Home to major industries including the prestigious Dangote Refinery, driving economic growth in Rivers State.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Diverse Community</h3>
+          <p>A thriving hub of cultural diversity, bringing together people from all walks of life.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Investment Opportunities</h3>
+          <p>A beacon for real estate investors seeking promising opportunities and growth.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-umbrella-beach"></i>
+          </div>
+          <h3>Tourism & Leisure</h3>
+          <p>Beautiful beaches and resort centers offering the perfect blend of tranquility and leisure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chairman's Welcome -->
+  <section id="chairman" class="chairman fade-in">
+    <div class="container">
+      <div class="chairman-flex">
+        <div class="chairman-photo">
+          <div class="photo-frame">
+            <img src="Chairman.jpg" alt="Chairman Abua-Odual">
+          </div>
+          <div class="chairman-info">
+            <h4>HON. ENGR. OWOLABI MICHAEL OFORI</h4>
+            <p class="chairman-title">Executive Chairman</p>
+          </div>
+        </div>
+        <div class="chairman-text">
+          <span class="section-tag light">Chairman's Message</span>
+          <h2>Welcome to Abua-Odual</h2>
+          <p>
+            I am honored to welcome you to the official website of Abua Odual Local Government,
+            the largest and most dynamic local government in Rivers State. As the proud Chairman,
+            I extend my warmest greetings to residents, investors, and visitors alike.
+          </p>
+          <p>
+            Abua Odual is not just a local government; it is a thriving hub of diversity and opportunity.
+            Home to the prestigious zone, our community stands at the forefront of industrialization,
+            hosting giants like the Dangote Refinery. We take pride in being the engine that drives the
+            economic growth of Rivers State.
+          </p>
+          <p>
+            Beyond industry, Abua Odual is a beacon for real estate investors seeking promising opportunities.
+            Our landscape is dotted with developments that promise not just financial returns but a chance to
+            be part of a community that is writing the future.
+          </p>
+          <p>
+            On this official website, you will be able to explore our ongoing projects, learn about our
+            community initiatives, and stay updated on the latest developments. We are committed to transparency,
+            community engagement, and the overall well-being of our residents.
+          </p>
+          <div class="chairman-signature">
+            <p>Thank you for being part of our story.</p>
+            <div class="signature-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Cardinal Agenda -->
+  <section id="agenda" class="agenda">
+    <div class="container">
+      <div class="agenda-content">
+        <span class="section-tag light">Our Vision</span>
+        <h2>Our 4 Cardinal Agenda</h2>
+        <div class="agenda-pillars">
+          <div class="pillar">
+            <i class="fas fa-road"></i>
+            <h3>Infrastructure</h3>
+            <p>Development</p>
+          </div>
+          <div class="pillar">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Local</h3>
+            <p>Economy</p>
+          </div>
+          <div class="pillar">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Social</h3>
+            <p>Development</p>
+          </div>
+          <div class="pillar">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Security &</h3>
+            <p>Environment</p>
+          </div>
+        </div>
+        <p class="agenda-description">
+          Our dedication is firmly rooted in the comprehensive advancement of Abua-Odual, guided by our 4 Cardinal Agenda: 
+          Infrastructural Development, Strengthening the Local Economy, Enhancing Social Services (Education, Health, and Social Interventions), 
+          and Promoting Security and Environmental Sustainability.
+        </p>
+        <a href="#contact" class="btn-hero">Get Involved</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Departments -->
+  <section id="departments" class="departments fade-in">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">What We Do</span>
+        <h2>Our Departments</h2>
+        <p class="section-subtitle">Dedicated departments working tirelessly to serve our community</p>
+      </div>
+      <div class="departments-grid">
+        <div class="dept-card">
+          <div class="dept-icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3>Health & Sanitation</h3>
+          <p>Promoting quality healthcare services and maintaining hygiene standards across all communities.</p>
+          <a href="#" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="dept-card">
+          <div class="dept-icon">
+            <i class="fas fa-book-reader"></i>
+          </div>
+          <h3>Education</h3>
+          <p>Supporting access to quality education and empowering our youth for a brighter future.</p>
+          <a href="#" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="dept-card">
+          <div class="dept-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>Agriculture</h3>
+          <p>Encouraging sustainable farming practices and promoting agribusiness development.</p>
+          <a href="#" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="dept-card">
+          <div class="dept-icon">
+            <i class="fas fa-hard-hat"></i>
+          </div>
+          <h3>Works & Infrastructure</h3>
+          <p>Improving roads, bridges, and public facilities for enhanced connectivity.</p>
+          <a href="#" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="dept-card">
+          <div class="dept-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3>Legal Services</h3>
+          <p>Providing legal guidance and ensuring compliance with local government regulations.</p>
+          <a href="#" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="dept-card">
+          <div class="dept-icon">
+            <i class="fas fa-hand-holding-usd"></i>
+          </div>
+          <h3>Finance</h3>
+          <p>Managing public funds with transparency and accountability for sustainable development.</p>
+          <a href="#" class="dept-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects fade-in">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Our Impact</span>
+        <h2>Recent Projects</h2>
+        <p class="section-subtitle">Empowering Abua-Odual through transformative projects—building a sustainable, vibrant community for a better tomorrow</p>
+      </div>
+
+      <div class="projects-gallery">
+        <div class="project-item">
+          <div class="project-image gradient-1">
+            <div class="placeholder-icon"><i class="fas fa-road"></i></div>
+            <div class="project-overlay">
+              <h3>Road Infrastructure Development</h3>
+              <p>Connecting communities</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-date"><i class="fas fa-calendar"></i> November 3, 2025</span>
+            <span class="project-category">Infrastructure</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-image gradient-2">
+            <div class="placeholder-icon"><i class="fas fa-school"></i></div>
+            <div class="project-overlay">
+              <h3>School Renovation Program</h3>
+              <p>Investing in education</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-date"><i class="fas fa-calendar"></i> November 3, 2025</span>
+            <span class="project-category">Education</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-image gradient-3">
+            <div class="placeholder-icon"><i class="fas fa-hospital"></i></div>
+            <div class="project-overlay">
+              <h3>Primary Healthcare Centers</h3>
+              <p>Health for all citizens</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-date"><i class="fas fa-calendar"></i> October 31, 2025</span>
+            <span class="project-category">Healthcare</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-image gradient-4">
+            <div class="placeholder-icon"><i class="fas fa-tint"></i></div>
+            <div class="project-overlay">
+              <h3>Community Water Supply</h3>
+              <p>Clean water initiative</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-date"><i class="fas fa-calendar"></i> October 29, 2025</span>
+            <span class="project-category">Water & Sanitation</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-image gradient-5">
+            <div class="placeholder-icon"><i class="fas fa-tractor"></i></div>
+            <div class="project-overlay">
+              <h3>Agricultural Support Program</h3>
+              <p>Empowering farmers</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-date"><i class="fas fa-calendar"></i> October 29, 2025</span>
+            <span class="project-category">Agriculture</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-image gradient-6">
+            <div class="placeholder-icon"><i class="fas fa-users"></i></div>
+            <div class="project-overlay">
+              <h3>Youth Skills Acquisition</h3>
+              <p>Training tomorrow's leaders</p>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-date"><i class="fas fa-calendar"></i> October 24, 2025</span>
+            <span class="project-category">Youth Development</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-all-projects">
+        <a href="#" class="btn-secondary">View All Projects <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section id="news" class="news fade-in">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Stay Updated</span>
+        <h2>News & Updates</h2>
+        <p class="section-subtitle">Latest happenings and announcements from Abua-Odual LGA</p>
+      </div>
+      <div class="news-grid">
+        <article class="news-item">
+          <div class="news-image gradient-1">
+            <div class="placeholder-icon"><i class="fas fa-hard-hat"></i></div>
+            <span class="news-badge">Infrastructure</span>
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span><i class="fas fa-calendar-alt"></i> November 5, 2025</span>
+              <span><i class="fas fa-user"></i> Admin</span>
+            </div>
+            <h3>Rural Road Construction Begins</h3>
+            <p>Flag-off ceremony for the construction of rural roads to improve connectivity across our communities.</p>
+            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-image gradient-2">
+            <div class="placeholder-icon"><i class="fas fa-heartbeat"></i></div>
+            <span class="news-badge">Healthcare</span>
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span><i class="fas fa-calendar-alt"></i> November 3, 2025</span>
+              <span><i class="fas fa-user"></i> Admin</span>
+            </div>
+            <h3>Free Healthcare Outreach Program</h3>
+            <p>New health initiatives aimed at improving primary healthcare services and promoting wellness.</p>
+            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-image gradient-3">
+            <div class="placeholder-icon"><i class="fas fa-graduation-cap"></i></div>
+            <span class="news-badge">Education</span>
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span><i class="fas fa-calendar-alt"></i> October 30, 2025</span>
+              <span><i class="fas fa-user"></i> Admin</span>
+            </div>
+            <h3>Youth Empowerment Training</h3>
+            <p>Training young people with essential skills and opportunities for self-reliance and entrepreneurship.</p>
+            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section id="map" class="map-section fade-in">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Find Us</span>
+        <h2>Map of Abua-Odual LGA</h2>
+        <p class="section-subtitle">Explore the geographical coverage of our local government area</p>
+      </div>
+      <div class="map-wrapper">
+        <div id="abuaMap"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag light">Get in Touch</span>
+        <h2>Contact Us</h2>
+        <p class="section-subtitle">We're here to serve you. Reach out to us anytime.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info-wrapper">
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Visit Our Office</h3>
+            <p>Abua-Odual Local Government Secretariat<br>Rivers State, Nigeria</p>
+          </div>
+          
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>+234 XXX XXX XXXX<br>Mon - Fri, 8am - 6pm</p>
+          </div>
+          
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>info@abuaodual.gov.ng<br>We'll respond within 24 hours</p>
+          </div>
+
+          <div class="social-links">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="logo.jpeg" alt="Abua-Odual Logo" class="footer-logo">
+            <h3>Abua-Odual LGA</h3>
+          </div>
+          <p>Building a prosperous, sustainable, and united Abua-Odual for all residents and stakeholders.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#chairman">The Chairman</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#news">News & Updates</a></li>
+            <li><a href="#">Business Directory</a></li>
+            <li><a href="#">Employment</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get the latest updates from Abua-Odual LGA</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Abua-Odual Local Government Area. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
